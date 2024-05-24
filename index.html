@@ -55,8 +55,13 @@
     }
     .section {
       margin-top: 40px;
-      padding-top: 80px; /* Add padding top */
-      margin-top: -40px; /* Adjust margin top */
+    }
+    .section::before {
+      content: "";
+      display: block;
+      height: 80px; /* Altura del encabezado */
+      margin-top: -80px; /* Altura del encabezado */
+      visibility: hidden;
     }
     .section h2 {
       border-bottom: 2px solid #555;
@@ -107,10 +112,10 @@
   </div>
   <div class="container">
     <div class="profile">
-      <img src="assets,images,Mifoto.jpeg"
+      <img src="intro-front/Mifoto.jpg"
           alt="Fabian Ibañez"
           width="150"
-          height="150"" />
+          height="150" />
       <div>
         <h1>Fabian Ibañez</h1>
         <p>Desarrollador FullStack</p>
@@ -135,7 +140,7 @@
         ¿Quieres saber más? <a href="#contacto">Contáctame</a> o envíame un <a href="mailto:Fabik_26@hotmail.com">email</a>.
       </p>
     </div>
-    <div class="section">
+    <div class="section" id="habilidades">
       <h2>Habilidades</h2>
       <div class="skills">
         <div class="skill">
